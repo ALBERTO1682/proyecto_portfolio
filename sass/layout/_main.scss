@@ -16,7 +16,18 @@ img.deco1{
     right: -200px;
     rotate: 180deg;
 }
-
+input:placeholder-shown {
+    border-bottom-color: $color-grey;
+  }
+  input:valid {
+    border-bottom-color: #00c853;
+  }
+  input:invalid:not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+  }
+  input:focus{
+    outline: none;
+  }
 section.hero{
     position: relative;
     display: flex;
@@ -166,6 +177,15 @@ section.projects{
         right: -200px;
         rotate: 180deg;
     }
+    input:placeholder-shown {
+        border-bottom-color: $color-grey;
+      }
+      input:valid {
+        border-bottom-color: #00c853;
+      }
+      input:invalid:not(:placeholder-shown) {
+        border-bottom-color: #ff1744;
+      }
 }
 @include breakpoint(desktop){
     body{
@@ -226,6 +246,18 @@ section.projects{
             }
         }
     }  
+    input:placeholder-shown {
+        border-bottom-color: $color-grey;
+      }
+      input:valid {
+        border-bottom-color: #00c853;
+      }
+      input:invalid:not(:placeholder-shown) {
+        border-bottom-color: #ff1744;
+      }
+      input:focus, textarea{
+        outline: none;
+      }
     
 }
 @include breakpoint(largedesktop){
@@ -287,6 +319,19 @@ section.projects{
             }
         }
     }  
+    input:placeholder-shown{
+        border-bottom-color: $color-grey;
+      }
+      
+      input:valid {
+        border-bottom-color: #00c853;
+      }
+      input:invalid:not(:placeholder-shown) {
+        border-bottom-color: #ff1744;
+      }
+      input:focus, textarea{
+        outline: none;
+      }
     
 }
 @include breakpoint(desktop){
