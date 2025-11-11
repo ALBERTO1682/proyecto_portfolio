@@ -1,0 +1,349 @@
+body{
+    position: relative;
+    div.img{
+        text-align: center;
+        img{
+            max-width: 45%;
+    
+        }}
+}
+img.deco{
+    position: absolute;
+    left: -200px;
+}
+img.deco1{
+    position: absolute;
+    right: -200px;
+    rotate: 180deg;
+}
+
+section.hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px ;
+    
+    h1,p{
+        text-align: center;
+        margin: 12px;
+        span{
+            text-decoration: underline;
+            text-decoration-color: $color-green;
+            text-underline-offset: 3px;
+
+        }
+    }
+    p{
+        margin-bottom: 24px;
+    }
+    
+}
+.button{
+    color: $color-white;
+    text-decoration: underline;
+    text-decoration-color: $color-green;
+    text-underline-offset: 10px;
+}
+.button:hover{
+    color: $color-green;
+}
+section.habilidades{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px ;
+    
+    h2,p{
+        text-align: center;
+    }
+    article{
+        margin-top: 35px;
+    }
+
+}
+div.line1{
+        background-color: $color-white;
+        height: 1px;
+        max-width: 95%;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+section.projects{
+    margin: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        max-width: 100%;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    p{
+        display: inline-block;
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+    div.titlepro{   
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    article{
+        div{
+            *{
+            margin-right: 30px;
+            }
+        }
+    }
+    
+
+}
+@include breakpoint(tablet){
+    body{
+        div.img{
+            img{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: -1;
+            }
+            
+
+        }
+        section.hero{
+            min-height: 40vh;
+            max-width: 79%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 18px;
+            *{
+                text-align: start;
+            }
+            a{
+                margin-left: 12px;
+            }
+            
+            
+        }
+        section.habilidades{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 18px;
+            margin-left: 18px;
+            *{
+                text-align: start;
+            }
+        }
+        section.projects{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 18px;
+            margin-left: 18px;
+            gap: 24px;
+            div.titlepro{
+                grid-column: span 2;         
+               }
+            *{
+                text-align: start;
+            }
+        }
+    }  
+    img.deco{
+        position: absolute;
+        left: -200px;
+    }
+    img.deco1{
+        position: absolute;
+        right: -200px;
+        rotate: 180deg;
+    }
+}
+@include breakpoint(desktop){
+    body{
+        div.line1{
+            width: 82%;
+        }
+        div.img{
+            img{
+                position: absolute;
+                top: 0px;
+                right: 118px;
+                z-index: -1;
+            }
+            
+
+        }
+        section.hero{
+            min-height: 85vh;
+            max-width: 49%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 118px;
+            *{  
+                padding: 0px;
+                margin: 0px;
+                text-align: start;
+                margin-bottom: 40px;
+            }
+            p{
+                width: 70%;
+            }
+            a{
+                margin-left: 0px;
+            }
+            
+            
+        }
+        section.habilidades{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 18px;
+            margin-left: 118px;
+            *{
+                text-align: start;
+            }
+        }
+        section.projects{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 118px;
+            margin-left: 18px;
+            gap: 24px;
+            div.titlepro{
+                grid-column: span 2;         
+               }
+            *{
+                text-align: start;
+            }
+        }
+    }  
+    
+}
+@include breakpoint(largedesktop){
+    body{
+        div.line1{
+            width: 86%;
+        }
+        div.img{
+            img{
+                position: absolute;
+                top: 0px;
+                right: 118px;
+                z-index: -1;
+            }
+            
+
+        }
+        section.hero{
+            min-height: 85vh;
+            max-width: 49%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 118px;
+            *{  
+                padding: 0px;
+                margin: 0px;
+                text-align: start;
+                margin-bottom: 100px;
+            }
+            p{
+                width: 70%;
+            }
+            a{
+                margin-left: 0px;
+            }
+            
+            
+        }
+        section.habilidades{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 18px;
+            margin-left: 118px;
+            *{
+                text-align: start;
+            }
+        }
+        section.projects{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 118px;
+            margin-left: 18px;
+            gap: 24px;
+            div.titlepro{
+                grid-column: span 2;         
+               }
+            *{
+                text-align: start;
+            }
+        }
+    }  
+    
+}
+@include breakpoint(desktop){
+    article{
+        position: relative;
+    }
+    .projects article img {
+        width: 100%;
+        display: block;
+      }
+    
+    .projects article .overlay {
+        position: absolute;
+        inset: 0; /* top:0; right:0; bottom:0; left:0; */
+        background-color: #1515159c;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+    
+      
+    .projects article:hover .overlay {
+        opacity: 1;
+      } 
+}
+
+@include breakpoint(largedesktop){
+    article{
+        position: relative;
+    }
+    .projects article img {
+        width: 100%;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+    
+    .projects article .overlay {
+        position: absolute;
+        inset: 0; /* top:0; right:0; bottom:0; left:0; */
+        background-color: #1515159c;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+    
+      
+    .projects article:hover .overlay {
+        opacity: 1;
+      } 
+}
