@@ -250,12 +250,6 @@ img.deco {
   left: -200px;
 }
 
-img.deco1 {
-  position: absolute;
-  right: -200px;
-  rotate: 180deg;
-}
-
 input:placeholder-shown {
   border-bottom-color: #d9d9d9;
 }
