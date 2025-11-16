@@ -151,9 +151,9 @@
         <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
      </div>
       <form action="">
-        <input type="text" placeholder="NAME" pattern="[A-Za-z\s]{3,}"  >
-        <input type="email" name="email" id="email" placeholder="EMAIL" >
-        <textarea placeholder="MESSAGE" id="" cols="20" rows="6" ></textarea>
+        <input type="text" placeholder="NAME" pattern="[A-Za-z\s]{3,}" minlength="3" required>
+        <input type="email" name="email" id="email" placeholder="EMAIL" minlength="3" required>
+        <textarea placeholder="MESSAGE" id="" cols="20" rows="6" required></textarea>
         <a href="" class="button">SEND MESSAGE</a>
 
       </form>

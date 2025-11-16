@@ -12,18 +12,27 @@ img.deco{
     left: -200px;
 }
 
-input:placeholder-shown {
-    border-bottom-color: $color-grey;
-  }
-  input:valid {
-    border-bottom-color: #00c853;
-  }
-  input:invalid:not(:placeholder-shown) {
-    border-bottom-color: #ff1744;
-  }
-  input:focus{
+input:focus,
+    textarea:focus {
     outline: none;
-  }
+    border-bottom-color: rgb(88, 88, 141);
+    }
+
+    input:valid,
+    textarea:valid {
+    border-bottom-color: #00c853;
+    }
+
+    input:invalid:not(:placeholder-shown),
+    textarea:invalid:not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+    }
+
+    input:invalid:not(:focus):not(:placeholder-shown),
+    textarea:invalid:not(:focus):not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+    }
+    
 section.hero{
     position: relative;
     display: flex;
@@ -173,15 +182,27 @@ section.projects{
         right: -200px;
         rotate: 180deg;
     }
-    input:placeholder-shown {
-        border-bottom-color: $color-grey;
-      }
-      input:valid {
-        border-bottom-color: #00c853;
-      }
-      input:invalid:not(:placeholder-shown) {
-        border-bottom-color: #ff1744;
-      }
+    input:focus,
+    textarea:focus {
+    outline: none;
+    border-bottom-color: rgb(88, 88, 141);
+    }
+
+    input:valid,
+    textarea:valid {
+    border-bottom-color: #00c853;
+    }
+
+    input:invalid:not(:placeholder-shown),
+    textarea:invalid:not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+    }
+
+    input:invalid:not(:focus):not(:placeholder-shown),
+    textarea:invalid:not(:focus):not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+    }
+    
 }
 @include breakpoint(desktop){
     body{
@@ -242,18 +263,26 @@ section.projects{
             }
         }
     }  
-    input:placeholder-shown {
-        border-bottom-color: $color-grey;
-      }
-      input:valid {
-        border-bottom-color: #00c853;
-      }
-      input:invalid:not(:placeholder-shown) {
-        border-bottom-color: #ff1744;
-      }
-      input:focus, textarea{
-        outline: none;
-      }
+    input:focus,
+    textarea:focus {
+    outline: none;
+    border-bottom-color: rgb(88, 88, 141);
+    }
+
+    input:valid,
+    textarea:valid {
+    border-bottom-color: #00c853;
+    }
+
+    input:invalid:not(:placeholder-shown),
+    textarea:invalid:not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+    }
+
+    input:invalid:not(:focus):not(:placeholder-shown),
+    textarea:invalid:not(:focus):not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+    }
     
 }
 @include breakpoint(largedesktop){
@@ -315,19 +344,27 @@ section.projects{
             }
         }
     }  
-    input:placeholder-shown{
-        border-bottom-color: $color-grey;
-      }
-      
-      input:valid {
-        border-bottom-color: #00c853;
-      }
-      input:invalid:not(:placeholder-shown) {
-        border-bottom-color: #ff1744;
-      }
-      input:focus, textarea{
-        outline: none;
-      }
+    input:focus,
+    textarea:focus {
+    outline: none;
+    border-bottom-color: rgb(88, 88, 141);
+    }
+
+    input:valid,
+    textarea:valid {
+    border-bottom-color: #00c853;
+    }
+
+    input:invalid:not(:placeholder-shown),
+    textarea:invalid:not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+    }
+
+    input:invalid:not(:focus):not(:placeholder-shown),
+    textarea:invalid:not(:focus):not(:placeholder-shown) {
+    border-bottom-color: #ff1744;
+    }
+    
     
 }
 @include breakpoint(desktop){
